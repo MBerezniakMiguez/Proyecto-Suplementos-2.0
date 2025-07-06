@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px){
+    .productos-proteinas, .productos-creatinas, .productos-colagenos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .productos-proteinas .producto:nth-child(3), .productos-creatinas .producto:nth-child(3), .productos-colagenos .producto:nth-child(3) {
+        grid-column: 1/-1;
+        justify-self: center;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .productos-proteinas, .productos-creatinas, .productos-colagenos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .productos-proteinas .producto:nth-child(3), .productos-creatinas .producto:nth-child(3), .productos-colagenos .producto:nth-child(3) {
+        grid-column: auto;
+        justify-self: stretch;
+        max-width: 100%;
+    }
+}
+

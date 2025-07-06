@@ -1,0 +1,142 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* home */
+/* variabnles */
+/* Paleta de colores */
+/* mixin */
+/* mixin con parametros */
+/* mixin sin parametros */
+/* mixin con parametros y estilos fijos */
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main .contenido-principal {
+  text-align: center;
+  margin-bottom: 15px;
+}
+main .titulo-principal {
+  background-color: rgb(239, 138, 4);
+  text-align: center;
+  text-decoration: underline;
+}
+main .contenedor-img-principal {
+  background-color: yellow;
+}
+main .imagen-principal {
+  width: 60%;
+}
+
+footer {
+  background-color: #212529;
+  color: whitesmoke;
+  margin-top: 10px;
+}
+footer .datos-comprador form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+footer .datos-comprador button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-top: 15px;
+}
+footer .datos-comprador button:hover {
+  background-color: #0056b3;
+}
+
+/* productos */
+/* variabnles */
+/* Paleta de colores */
+/* mixin */
+/* mixin con parametros */
+/* mixin sin parametros */
+/* mixin con parametros y estilos fijos */
+.main-productos .contenedor-imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.main-productos .imagen-principal-productos {
+  width: 100%;
+  height: auto;
+}
+.main-productos div details summary {
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+.main-productos button {
+  background-color: rgb(239, 138, 4);
+  border-radius: 10px;
+}
+
+/* variabnles */
+/* Paleta de colores */
+/* mixin */
+/* mixin con parametros */
+/* mixin sin parametros */
+/* mixin con parametros y estilos fijos */
+main .preg-fre {
+  text-align: center;
+}
+main .preg-fre ul {
+  list-style: none;
+}
+main .preg-fre:hover {
+  transform: translateY(-4px);
+}
+main .preg-fre h2 {
+  color: #007BFF;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .productos-proteinas, .productos-creatinas, .productos-colagenos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .productos-proteinas .producto:nth-child(3), .productos-creatinas .producto:nth-child(3), .productos-colagenos .producto:nth-child(3) {
+    grid-column: 1/-1;
+    justify-self: center;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .productos-proteinas, .productos-creatinas, .productos-colagenos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .productos-proteinas .producto:nth-child(3), .productos-creatinas .producto:nth-child(3), .productos-colagenos .producto:nth-child(3) {
+    grid-column: auto;
+    justify-self: stretch;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

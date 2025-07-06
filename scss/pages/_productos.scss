@@ -1,0 +1,32 @@
+/* variabnles */
+@import "../abstracts/variables";
+/* mixin */
+@import "../abstracts/mixin";
+
+.main-productos{
+    .contenedor-imagenes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .imagen-principal-productos{
+        width: 100%;
+        height: auto;
+    }
+    div{
+        details{
+            summary{
+            display: inline-block;
+            border: 1px solid blue;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-weight: bold;
+            }
+        }
+    }
+    button{
+        background-color: $color-principal;
+        border-radius: 10px;
+    }
+}

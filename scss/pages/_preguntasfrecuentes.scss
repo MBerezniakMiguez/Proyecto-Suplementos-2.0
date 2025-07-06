@@ -1,0 +1,28 @@
+/* variabnles */
+@import "../abstracts/variables";
+/* mixin */
+@import "../abstracts/mixin";
+
+main{
+    .preg-fre{
+        text-align: center;
+    }
+    .preg-fre{
+        ul{
+            list-style: none;
+        }
+    }
+    .preg-fre:hover {
+            transform: translateY(-4px);
+    }
+    .preg-fre{
+        h2{
+            color: #007BFF;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+
+
+}

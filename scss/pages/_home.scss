@@ -1,0 +1,60 @@
+/* variabnles */
+@import "../abstracts/variables";
+/* mixin */
+@import "../abstracts/mixin";
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+main{
+    .contenido-principal{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .titulo-principal{
+        background-color: $color-principal;
+        @include estilos-titulos-subtitulos
+    }
+    .contenedor-img-principal{
+        background-color: yellow;
+    }
+    .imagen-principal{
+        width: 60%;
+    }
+}
+
+footer{
+    background-color: #212529;
+    color: whitesmoke;
+    margin-top: 10px;
+
+    .datos-comprador form{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .datos-comprador button{
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        margin-top: 15px;
+    }
+    .datos-comprador button:hover{
+        background-color: #0056b3;
+    }
+}
+
