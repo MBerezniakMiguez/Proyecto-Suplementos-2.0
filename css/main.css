@@ -39,8 +39,28 @@ main .contenedor-img-principal {
 main .imagen-principal {
   width: 60%;
 }
+main .home-productos {
+  background-color: rgb(209, 204, 204);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+main .home-productos img {
+  width: 60%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .home-productos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px orangered;
+  border-radius: 10px;
+}
 
 footer {
+  padding: 5px 20px 5px 20px;
   background-color: #212529;
   color: whitesmoke;
   margin-top: 10px;
@@ -80,9 +100,33 @@ footer .datos-comprador button:hover {
   width: 100%;
   height: auto;
 }
+.main-productos .productos-proteinas {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 5px solid rgb(239, 138, 4);
+  border-radius: 5px;
+  justify-items: center;
+}
+.main-productos .productos-creatinas {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 5px solid rgb(239, 138, 4);
+  border-radius: 5px;
+  justify-items: center;
+}
+.main-productos .productos-colagenos {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border: 5px solid rgb(239, 138, 4);
+  border-radius: 5px;
+  justify-items: center;
+}
 .main-productos div details summary {
   display: inline-block;
-  border: 1px solid blue;
+  border: 1px solid rgb(214, 116, 18);
   border-radius: 5px;
   padding: 10px;
   background-color: #f9f9f9;
@@ -99,18 +143,21 @@ footer .datos-comprador button:hover {
 /* mixin con parametros */
 /* mixin sin parametros */
 /* mixin con parametros y estilos fijos */
-main .preg-fre {
+main .contenedor-preguntas {
+  /* background-color: rgb(226, 195, 160); */
+}
+main .contenedor-preguntas .preg-fre {
   text-align: center;
 }
-main .preg-fre ul {
+main .contenedor-preguntas .preg-fre ul {
   list-style: none;
 }
-main .preg-fre:hover {
+main .contenedor-preguntas .preg-fre:hover {
   transform: translateY(-4px);
 }
-main .preg-fre h2 {
-  color: #007BFF;
-  font-size: 1.25rem;
+main .contenedor-preguntas .preg-fre h2 {
+  color: #d58d2a;
+  font-size: 1.75rem;
   margin-bottom: 0.5rem;
 }
 
@@ -136,6 +183,21 @@ main .preg-fre h2 {
     grid-column: auto;
     justify-self: stretch;
     max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .home-productos {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main .home-productos img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  main .home-productos {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

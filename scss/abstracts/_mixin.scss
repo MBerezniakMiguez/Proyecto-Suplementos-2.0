@@ -6,4 +6,13 @@
     text-align: center;
     text-decoration: underline;
 }
+
+@mixin estilos-productos-productos{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        border: 5px solid $color-principal ;
+        border-radius: 5px;
+        justify-items: center;
+}
 /* mixin con parametros y estilos fijos */

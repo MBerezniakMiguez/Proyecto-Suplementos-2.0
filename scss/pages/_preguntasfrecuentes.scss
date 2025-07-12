@@ -4,25 +4,27 @@
 @import "../abstracts/mixin";
 
 main{
-    .preg-fre{
-        text-align: center;
-    }
-    .preg-fre{
-        ul{
-            list-style: none;
+    .contenedor-preguntas{
+        /* background-color: rgb(226, 195, 160); */
+        .preg-fre{
+            text-align: center;
+        }
+        .preg-fre{
+            ul{
+                list-style: none;
+            }
+        }
+        .preg-fre:hover {
+                transform: translateY(-4px);
+        }
+        .preg-fre{
+            h2{
+                color: #d58d2a;
+                font-size: 1.75rem;
+                margin-bottom: 0.5rem;
+            }
         }
     }
-    .preg-fre:hover {
-            transform: translateY(-4px);
-    }
-    .preg-fre{
-        h2{
-            color: #007BFF;
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-    }
-
 
 
 }

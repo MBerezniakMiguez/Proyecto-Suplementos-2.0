@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px){
+  main{
+    .home-productos{
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 20px;
+      padding-right: 20px;
+      img{
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px){
+  main{
+    .home-productos{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
